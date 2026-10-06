@@ -1,168 +1,104 @@
-
 <!DOCTYPE html>
-
 <html lang="pt">
-
 <head>
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Home Page</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecto - Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- Parte principal da página -->
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner container">
+      <div class="logo">Header Logo</div>
+      <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#info">Informação</a></li>
+          <li><a href="#quote">Citação</a></li>
+          <li><a href="#cta">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero_section">
-
-        <!-- Logo que fica no canto superior esquerdo -->
-
-        <header class="hero_header">
-
-            <p class="logo_text">
-                HEADER LOGO
-            </p>
-
-        </header>
-
-
-        <!-- Aqui ficam o texto e a imagem -->
-
-        <div class="hero">
-
-            <!-- Título, descrição e botão -->
-
-            <div id="hero_item">
-
-                <h1 class="hero_h1">
-                    Projecto - Landing Page.
-                </h1>
-
-                <p class="hero_p1">
-                    Este é o primeiro projecto de uma Landing Page
-                    do currículo "The Odin Project."
-                    <br>
-                    Comecei no dia 04:06:2026.
-                </p>
-
-                <button class="hero_button">
-                    <strong>Sign Up</strong>
-                </button>
-
-            </div>
-
-
-            <!-- Por enquanto é só um espaço para a imagem -->
-
-            <div class="hero_item">
-                Aqui é pra colocar uma imagem
-            </div>
-
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <h1>Este site é incrível</h1>
+        <p>Este site tem algum subtexto que vai aqui por baixo do título principal. É uma fonte mais pequena e a cor é um contraste mais baixo.</p>
+        <button class="btn btn-primary">Sign Up</button>
+      </div>
+      <div class="hero-image">
+        <div class="img-placeholder">
+          <p>Este é um placeholder para uma imagem</p>
         </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
-
-
-    <!-- Aqui vou colocar algumas informações sobre o projeto -->
-
-    <section class="segunda_section">
-
-        <h1>
-            Alguma Informação Aleatória.
-        </h1>
-
-        <div class="conteiner1">
-
-            <!-- Quadrados que depois podem receber imagens -->
-
-            <div class="item1"></div>
-
-            <div class="item1"></div>
-
-            <div class="item1"></div>
-
-            <div class="item1"></div>
-
+  <!-- INFORMATION -->
+  <section class="info" id="info">
+    <div class="container">
+      <h2>Alguma Informação Aleatória.</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img"></div>
+          <p>subtext</p>
         </div>
-
-    </section>
-
-
-    <!-- Espaço para uma frase ou citação -->
-
-    <section class="section_2">
-
-        <div class="conteiner3">
-
-            <p class="p2">
-
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Aspernatur vel atque,
-                animi qui amet aut? Rerum mollitia harum
-                incidunt iure doloribus, ex dolorem veniam
-                numquam. Debitis repellendus iure quos sunt!
-
-                <br>
-                <br>
-
-                <strong>
-                    -Dev:Fulano404
-                </strong>
-
-            </p>
-
+        <div class="card">
+          <div class="card-img"></div>
+          <p>subtext</p>
         </div>
-
-    </section>
-
-
-    <!-- Última chamada para o usuário -->
-
-    <section class="section_3">
-
-        <div class="conteiner4">
-
-            <div class="item3">
-
-                <h1 class="h1_5">
-                    Aqui eu não sei o que escrever.
-                </h1>
-
-                <p class="p6">
-                    Um texto aleatório, mas, clique no Botão.
-                </p>
-
-                <button class="button2">
-                    Sign Up
-                </button>
-
-            </div>
-
+        <div class="card">
+          <div class="card-img"></div>
+          <p>subtext</p>
         </div>
+        <div class="card">
+          <div class="card-img"></div>
+          <p>subtext</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- QUOTE -->
+  <section class="quote" id="quote">
+    <div class="container">
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel atque, animi qui amet aut? Rerum mollitia harum incidunt iure doloribus, ex dolorem veniam numquam. Debitis repellendus iure quos sunt!</p>
+        <footer>— <strong>Fulano404</strong></footer>
+      </blockquote>
+    </div>
+  </section>
 
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-text">
+          <h3>Aqui eu não sei o que escrever.</h3>
+          <p>Um texto aleatório, mas, clique no Botão.</p>
+        </div>
+        <button class="btn btn-outline">Sign Up</button>
+      </div>
+    </div>
+  </section>
 
-    <!-- Informações no final da página -->
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Copyright © Projeto Landing Page 2026</p>
+    </div>
+  </footer>
 
-    <footer>
-
-        <p class="p4">
-            Fulano404 | Dnanyama.
-        </p>
-
-        <p class="p4">
-            doranynanyama@gmail.com | +244 951 214 339
-        </p>
-
-    </footer>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
