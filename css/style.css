@@ -1,84 +1,171 @@
+
+/* Configurações básicas da página */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Parte de cima da página */
+
 .hero_section {
     background-color: #1F2937;
     width: 100%;
 }
 
-.hero {
-    display: flex;
+
+/* Logo do site */
+
+.hero_header {
     width: 100%;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-
-.hero_item {
-    background-color: #E5E7EB;
-    width: 420px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#hero_item {
-    width: 500px;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero_h1 {
-    color: #F9FAF8;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    margin-top: -15%;
-}
-
-.hero_p1 {
-    color: #E5E7EB;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 7%;
-    margin-left: -40%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 30px;
 }
 
 .logo_text {
     color: #F9FAF8;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: -35%;
-    margin-left: -3%;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
 }
 
-.hero_button {
-    background: #3882F6;
+
+/* Conteúdo principal do Hero */
+
+.hero {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 420px;
+
+    margin: 0 auto;
+    padding: 40px 30px 70px;
+
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+
+/* Parte onde ficam o título, texto e botão */
+
+#hero_item {
+    width: 500px;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+/* Título principal */
+
+.hero_h1 {
     color: #F9FAF8;
-    border-radius: 9%;
+    font-size: clamp(32px, 5vw, 50px);
+
+    margin: 0 0 15px 0;
+}
+
+
+/* Texto que fica abaixo do título */
+
+.hero_p1 {
+    color: #E5E7EB;
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    margin: 0 0 25px 0;
+}
+
+
+/* Botão principal */
+
+.hero_button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+
+    border-radius: 8px;
+
     width: 130px;
     height: 38px;
+
     border: none;
-    margin-top: -15%;
-    margin-left: 16%;
+    margin: 0;
+
+    cursor: pointer;
+    font-size: 15px;
 }
+
+
+/* Espaço onde vou colocar a imagem depois */
+
+.hero_item {
+    background-color: #E5E7EB;
+
+    width: 500px;
+    max-width: 100%;
+    height: 250px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* Segunda parte da página */
 
 .segunda_section {
     text-align: center;
+    padding: 50px 20px;
 }
 
 .conteiner1 {
     width: 100%;
-    height: 400px;
+    max-width: 1100px;
+    min-height: 400px;
+
+    margin: 0 auto;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     gap: 30px;
+
+    flex-wrap: wrap;
 }
+
+
+/* Os quatro quadrados azuis */
 
 .item1 {
     width: 200px;
     height: 200px;
+
     border: 3px solid #3882F6;
     border-radius: 15%;
-    margin-top: -12%;
+
+    margin: 0;
 }
+
+
+/* Parte cinza com a frase */
 
 .section_2 {
     background-color: #E5E7EB;
@@ -86,70 +173,345 @@
 
 .conteiner3 {
     width: 100%;
-    height: 300px;
+    min-height: 300px;
+
     display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
 }
 
 .p2 {
     font-style: italic;
+
     text-align: center;
-    font-size: 30px;
-    margin-top: 8%;
+
+    font-size: clamp(22px, 4vw, 30px);
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    line-height: 1.5;
 }
 
-footer {
-    background: #1F2937;
-    text-align: center;
-    height: 70px;
-    font-size: 20px;
-}
 
-.p4 {
-    color: white;
-}
+/* Última seção antes do footer */
 
 .section_3 {
-    height: 300px;
+    min-height: 300px;
     width: 100%;
+
+    padding: 50px 20px;
 }
 
 .conteiner4 {
     width: 100%;
-    height: 200px;
+    min-height: 200px;
+
     display: flex;
-    align-content: center;
+
+    align-items: center;
     justify-content: center;
 }
 
+
+/* Caixa azul onde fica o último texto e botão */
+
 .item3 {
-    background: #3882F6;
+    background-color: #3882F6;
+
     width: 1150px;
-    height: 170px;
+    max-width: 100%;
+
+    min-height: 170px;
+
     border-radius: 5%;
-    margin-top: 5%;
+
     border: 4px solid #3882F6;
+
+    margin: 0;
+
+    padding: 30px 50px;
+
+    position: relative;
 }
 
-.button2 {
-    background: #3882F6;
-    color: #F9FAF8;
-    border-radius: 8%;
-    width: 130px;
-    height: 38px;
-    border: 3px solid white;
-    margin-left: 80%;
-    margin-top: -7%;
-}
+
+/* Título da última caixa */
 
 .h1_5 {
     color: beige;
-    font-size: 30px;
-    margin-left: 190px;
-    margin-top: 3%;
+
+    font-size: clamp(22px, 3vw, 30px);
+
+    margin: 0 0 15px 0;
 }
+
+
+/* Texto da última caixa */
 
 .p6 {
     color: beige;
+
+    font-size: clamp(16px, 2vw, 20px);
+
+    margin: 0;
+
+    max-width: 700px;
+}
+
+
+/* Botão da última seção */
+
+.button2 {
+    background-color: #3882F6;
+    color: #F9FAF8;
+
+    border-radius: 8%;
+
+    width: 130px;
+    height: 38px;
+
+    border: 3px solid white;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    right: 50px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #1F2937;
+
+    min-height: 70px;
+
     font-size: 20px;
-    margin-left: 190px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 15px;
+}
+
+.p4 {
+    color: white;
+    margin: 0;
+}
+
+
+/* Quando a tela fica menor que 900px */
+
+@media (max-width: 900px) {
+
+    /* Hero passa a ficar um embaixo do outro */
+
+    .hero {
+        flex-direction: column;
+
+        min-height: auto;
+
+        padding: 30px 25px 60px;
+
+        gap: 40px;
+    }
+
+    /* Centraliza o texto */
+
+    #hero_item {
+        width: 100%;
+        max-width: 600px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    /* A imagem ocupa mais espaço na tela */
+
+    .hero_item {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    /* Os quadrados ficam mais flexíveis */
+
+    .conteiner1 {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    /* Ajusta a caixa azul */
+
+    .item3 {
+        padding: 30px;
+    }
+
+    /* O botão deixa de ficar do lado e vai para baixo */
+
+    .button2 {
+        position: static;
+
+        transform: none;
+
+        display: block;
+
+        margin: 25px auto 0;
+    }
+
+    .h1_5,
+    .p6 {
+        text-align: center;
+    }
+
+    .p6 {
+        margin: 0 auto;
+    }
+
+    /* Organiza o footer */
+
+    footer {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+/* Ajustes para celulares */
+
+@media (max-width: 600px) {
+
+    /* Diminui um pouco o espaço do logo */
+
+    .hero_header {
+        padding: 20px;
+    }
+
+    .logo_text {
+        font-size: 20px;
+    }
+
+    /* Dá menos espaço para o Hero */
+
+    .hero {
+        padding: 30px 20px 50px;
+        gap: 30px;
+    }
+
+    /* Diminui o título */
+
+    .hero_h1 {
+        font-size: 36px;
+    }
+
+    .hero_p1 {
+        font-size: 16px;
+    }
+
+    /* Diminui a área da imagem */
+
+    .hero_item {
+        height: 220px;
+    }
+
+    /* Segunda seção */
+
+    .segunda_section {
+        padding: 40px 15px;
+    }
+
+    .conteiner1 {
+        gap: 20px;
+    }
+
+    .item1 {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Frase */
+
+    .conteiner3 {
+        padding: 40px 20px;
+    }
+
+    .p2 {
+        font-size: 22px;
+    }
+
+    /* Última seção */
+
+    .section_3 {
+        padding: 40px 15px;
+    }
+
+    .item3 {
+        min-height: auto;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .h1_5 {
+        font-size: 24px;
+    }
+
+    .p6 {
+        font-size: 17px;
+    }
+
+    .button2 {
+        width: 120px;
+        height: 38px;
+    }
+
+    /* Footer */
+
+    footer {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+
+/* Para celulares bem pequenos */
+
+@media (max-width: 400px) {
+
+    .hero_h1 {
+        font-size: 30px;
+    }
+
+    .hero_item {
+        height: 180px;
+    }
+
+    .item1 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .p2 {
+        font-size: 19px;
+    }
+
+    .h1_5 {
+        font-size: 21px;
+    }
+
+    .p6 {
+        font-size: 15px;
+    }
 }
